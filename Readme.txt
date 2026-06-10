@@ -191,3 +191,4 @@ import tailwindConfig from "@/tailwind.config"; //отримання змінн�
 //-- 20250302 /Что принес релиз NextJS 15 и как обновиться //https://www.youtube.com/watch?v=mgl-3vNas_w&ab_channel=%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%9D%D0%B5%D0%BF%D0%BE%D0%BC%D0%BD%D1%8F%D1%89%D0%B8%D0%B9
     Міграція на Nex15/ React19:
     npx @next/codemod@canary upgrate latest
+рррр
