@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 // import buromobelexperte_brands from "@/public/icon_svg/ecomerc/buromobelexperte_brands.svg";
-import promo_banner from "/public/baners/promo_banner.jpg";
+import promo_banner from "@/public/baners/promo_banner.jpg"
 import Categories from "@/components/product/Categories";
 // import promo_banner from "/public/images/home/VitrynaBakal-930-620.jpg"
 
