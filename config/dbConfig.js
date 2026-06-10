@@ -11,6 +11,9 @@ export let sql = postgres({
   database: process.env.PGSQL_DATABASE, // Name of database to connect to
   username: process.env.PGSQL_USER, // Username of database user
   password: process.env.PGSQL_PASSWORD, // Password of database user
+  ssl: {
+    rejectUnauthorized: false,
+  },
 })
 
 //  pg(npm) //Старе/Підключення до PosgreSQL//https://www.simplenextjs.com/posts/next-postgresql
