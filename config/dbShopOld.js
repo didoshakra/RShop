@@ -12,7 +12,10 @@ export const pool = new Pool({
   database: process.env.PGSQL_DATABASE,
   user: process.env.PGSQL_USER,
   password: process.env.PGSQL_PASSWORD,
-});
+  ssl: {
+    rejectUnauthorized: false,
+  },
+})
 
 // export const pgclient = new Client({
 //   connectionString: connectionString,
