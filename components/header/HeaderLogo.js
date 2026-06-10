@@ -27,7 +27,7 @@ const HeaderLogo = () => {
       </Link>
       <Link href="/">
         <div className="flex items-center justify-start px-1 text-xl font-bold italic text-hText hover:text-hTextHov hover:bg-hBgHov dark:text-hTextD dark:hover:text-hTextHovD dark:hover:bg-hBgHovD md:px-2 md:text-2xl">
-          RAtest
+          RShop
         </div>
       </Link>
       {/* ========================================================================== */}
