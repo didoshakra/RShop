@@ -1,42 +1,84 @@
+/* =================== */
+/* 1️⃣ Підключення Tailwind */
+/* =================== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @import ЗАВЖДИ на початку, поза будь-якими блоками */
-@import "@/styles/themes/tIndigo.css";
-@import "@/styles/themes/tPink.css";
-@import "@/styles/themes/tGreen.css";
-@import "@/styles/themes/tAmber.css";
-@import "@/styles/themes/tGray.css";
-@import "@/styles/themes/tLime.css";
-@import "@/styles/themes/tRed.css";
-@import "@/styles/themes/tYellow.css";
-@import "@/styles/themes/tEmerald.css";
-@import "@/styles/themes/tTeal.css";
-@import "@/styles/themes/tCyan.css";
-@import "@/styles/themes/tSky.css";
-@import "@/styles/themes/tBlue.css";
-@import "@/styles/themes/tViolet.css";
-@import "@/styles/themes/tPurple.css";
-@import "@/styles/themes/tFuchsia.css";
-@import "@/styles/themes/tRose.css";
-@import "@/styles/themes/tOrange.css";
-@import "@/styles/themes/tZinc.css";
-@import "@/styles/themes/tNeutral.css";
-@import "@/styles/themes/tStone.css";
-
+/* =================== */
+/* 3️⃣ Основні CSS-перемінні (root) і базові стилі */
+/* =================== */
 @layer base {
-  html {
-    --color-pCol: #ffffff;
-    --color-pCol0: #f8fafc;
-    --color-pCol1: #f1f5f9;
-    --color-pCol2: #e2e8f0;
-    --color-pCol3: #cbd5e1;
-    --color-pCol4: #94a3b8;
-    --color-pCol5: #64748b;
-    --color-pCol6: #475569;
-    --color-pCol7: #334155;
-    --color-pCol8: #1e293b;
-    --color-pCol9: #0f172a;
+  /* html {  */
+  :root {
+    --color-pCol0: #ecfdf5;
+    /* --color-pCol1: #d1fae5;
+    --color-pCol2: #a7f3d0;
+    --color-pCol3: #6ee7b7;
+    --color-pCol4: #34d399;
+    --color-pCol5: #10b981;
+    --color-pCol6: #059669;
+    --color-pCol7: #047857;
+    --color-pCol8: #065f46;
+    --color-pCol9: #064e3b;
+    --color-pCol10: #e11d48;
+    --color-pCol11: #c026d3;
+    --color-pCol12: #ccfbf1;
+     --color-pCol0: #ecfeff; */
+    --color-pCol0: #f0fdfa;
+    --color-pCol1: #ccfbf1;
+    --color-pCol2: #99f6e4;
+    --color-pCol3: #5eead4;
+    --color-pCol4: #2dd4bf;
+    --color-pCol5: #0d9488;
+    --color-pCol6: #0f766e;
+    --color-pCol7: #0f766e;
+    --color-pCol8: #115e59;
+    --color-pCol9: #134e4a;
+    --color-pCol10: #dc2626; /* red-600 */
+    --color-pCol11: #d97706; /* amber-600 */
+    --color-pCol12: #a5f3fc; /* cyan-200 — легкий споріднений фон */
+  }
+
+  /* Можна додати глобальні базові стилі тут */
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: var(--color-pCol0);
+  }
+}
+
+/* =================== */
+/* 4️⃣ Кастомні утиліти / шрифти / типографія */
+/* =================== */
+@layer utilities {
+  /* === Заголовки === */
+  .h1On {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight;
+  }
+
+  .h2On {
+    @apply text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug;
+  }
+
+  .h3On {
+    @apply text-lg sm:text-xl lg:text-2xl font-semibold leading-snug;
+  }
+
+  .h4Text {
+    @apply text-base sm:text-lg lg:text-xl font-medium leading-normal;
+  }
+
+  /* === Параграфи === */
+  .pOn {
+    @apply text-sm sm:text-base lg:text-lg font-normal leading-snug;
+  }
+
+  .p-smText {
+    @apply text-xs sm:text-sm font-normal leading-tight;
+  }
+
+  .p-lgText {
+    @apply text-base sm:text-lg lg:text-xl font-normal leading-normal;
   }
 }
