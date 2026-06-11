@@ -14,6 +14,9 @@ export let sql = postgres({
   ssl: {
     rejectUnauthorized: false,
   },
+  connection: {
+    search_path: "public", // ← додайте це
+  },
 })
 
 //  pg(npm) //Старе/Підключення до PosgreSQL//https://www.simplenextjs.com/posts/next-postgresql
