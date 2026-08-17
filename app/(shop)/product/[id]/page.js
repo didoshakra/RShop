@@ -12,7 +12,8 @@ import { getProductById } from "@/app/(shop)/product/data/data"
 // }
 
 export default async function ProductPage({ params }) {
-  const id = params.id
+//   const id = params.id
+  const { id } = await params
   const product = await getProductById(id)
 
   if (!product) {
